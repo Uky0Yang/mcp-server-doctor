@@ -228,24 +228,9 @@ jobs:
 
 Use `check` in CI unless your workflow intentionally installs and starts every configured MCP server.
 
-## PyPI Release
+## Publishing releases
 
-This repository is prepared for PyPI Trusted Publishing. Configure a pending publisher on PyPI with:
-
-- Project: `mcp-server-doctor`
-- Owner: `Uky0Yang`
-- Repository: `mcp-server-doctor`
-- Workflow: `release.yml`
-- Environment: `pypi`
-
-Then publish with:
-
-```bash
-git tag v0.2.0
-git push origin v0.2.0
-```
-
-See [docs/publishing.md](docs/publishing.md).
+`mcp-server-doctor` is published on PyPI through Trusted Publishing. Maintainers can follow the version, tag, and verification checklist in [docs/publishing.md](docs/publishing.md).
 
 ## Exit Codes
 
